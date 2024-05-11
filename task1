@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+ 
+ function Rectangle(x1, y1, x2, y2) {
+    this.x1 = x1;
+    this.y1 = y1;
+    this.x2 = x2;
+    this.y2 = y2;
+}
+
+Rectangle.prototype.toString = function() {
+    return "Rectangle: (" + this.x1 + ", " + this.y1 + "), (" + this.x2 + ", " + this.y2 + ")";
+};
+
+Rectangle.prototype.valueOf = function() {
+    var width = Math.abs(this.x2 - this.x1);
+    var height = Math.abs(this.y2 - this.y1);
+    return 2 * (width + height);
+};
+
+// Приклад використання
+var rect = new Rectangle(1, 1, 5, 4);
+console.log(rect.toString()); // Виведе: "Rectangle: (1, 1), (5, 4)"
+console.log(rect.valueOf());  // Виведе: 14
+
+        </script>
+</body>
+</html>
