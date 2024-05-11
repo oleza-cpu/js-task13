@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+ var inputStrings = [];
+var userInput;
+
+// Запитуємо рядки у користувача
+while (true) {
+    userInput = prompt("Введіть рядок (або 'end' для завершення введення):");
+    if (userInput === "end" || userInput === null) {
+        break;
+    }
+    inputStrings.push(userInput);
+}
+
+// Перевіряємо кожен рядок і додаємо відповідний текст
+var outputStrings = inputStrings.map(function(str) {
+    return /\d/.test(str) ? "Numbers: " + str : "No numbers: " + str;
+});
+
+// Виводимо результат у вигляді таблиці
+console.table(outputStrings);
+
+        </script>
+</body>
+</html>
