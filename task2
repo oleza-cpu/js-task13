@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+ 
+ var logins = "Login1, LOgin2, login3, loGin4";
+var loginArray = logins.split(", ");
+
+for (var i = 0; i < loginArray.length; i++) {
+    loginArray[i] = loginArray[i].toLowerCase();
+}
+
+console.log(loginArray);
+
+        </script>
+</body>
+</html>
