@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+// Створюємо масив
+var languages = ["JavaScript", "Python"];
+
+// Додаємо "Java" в кінець масиву
+languages.push("Java");
+
+// Замінюємо передостанній елемент на "Kotlin"
+languages[languages.length - 2] = "Kotlin";
+
+// Видаляємо перший елемент масиву і виводимо його у консоль
+var firstElement = languages.shift();
+console.log("Видалений перший елемент: " + firstElement);
+
+// Додаємо "Basic" і "Pascal" в початок масиву
+languages.unshift("Basic", "Pascal");
+
+// Виводимо результат
+console.log(languages);
+
+        </script>
+</body>
+</html>
