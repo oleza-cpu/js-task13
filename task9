@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+function matrixToArray(matrix) {
+    return matrix.reduce(function(acc, curr) {
+        return acc.concat(curr);
+    }, []);
+}
+
+var arr = [[1, 2], [3, 4, 5], [6, 7, 8], [9]];
+var arr = matrixToArray(arr);
+console.log(arr); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+        </script>
+</body>
+</html>
